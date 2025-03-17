@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Proficiency Test</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .question { margin-bottom: 15px; }
+        .hidden { display: none; }
+        .read-button {
+            background-color: #f11017; /* Green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .submit-button, .back-button {
+            background-color: #008CBA; /* Blue */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>English Proficiency Test P.6</h1>
+    <form id="testForm">
+
+        <section>
+            <h2>📌 Instructions for the English Proficiency Test P.6</h2>
+            <ol>
+              <li>Read each question carefully.</li>
+              <li>Choose the correct answer for each question.</li>
+              <li>Answer all 30 questions before submitting.</li>
+              <li>When you finish the test, capture a screenshot of your answers.</li>
+              <li>Submit your screenshot as proof of completion.</li>
+            </ol>
+            <p><strong>Good luck! 😊</strong></p>
+            
+            <hr>
+            
+            <h2>📌 คำแนะนำสำหรับแบบทดสอบวัดความสามารถทางภาษาอังกฤษ ป.6</h2>
+            <ol>
+              <li>อ่านคำถามแต่ละข้ออย่างละเอียด</li>
+              <li>เลือกคำตอบที่ถูกต้องสำหรับแต่ละข้อ</li>
+              <li>ตอบคำถามทั้ง 30 ข้อก่อนส่ง</li>
+              <li>เมื่อทำข้อสอบเสร็จแล้ว ให้ถ่ายภาพหน้าจอคำตอบของคุณ</li>
+              <li>ส่งภาพหน้าจอเป็นหลักฐานการทำแบบทดสอบ</li>
+            </ol>
+            <p><strong>ขอให้โชคดี! 😊</strong></p>
+          </section>
+        
+        <div class="question">
+            <p>1. What season is it when leaves fall from trees?</p>
+            <input type="radio" name="q1" value="A"> Spring.<br>
+            <input type="radio" name="q1" value="B"> Summer.<br>
+            <input type="radio" name="q1" value="C"> Autumn.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>2. What season comes after winter?</p>
+            <input type="radio" name="q2" value="A"> Summer.<br>
+            <input type="radio" name="q2" value="B"> Spring.<br>
+            <input type="radio" name="q2" value="C"> Autumn.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>3. What do you wear when it is raining?</p>
+            <input type="radio" name="q3" value="A"> Sunglasses.<br>
+            <input type="radio" name="q3" value="B"> Raincoat.<br>
+            <input type="radio" name="q3" value="C"> T-shirt.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>4. What kind of weather is best for going to the beach?</p>
+            <input type="radio" name="q4" value="A"> Snowy.<br>
+            <input type="radio" name="q4" value="B"> Rainy.<br>
+            <input type="radio" name="q4" value="C"> Sunny.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>5. What is a common breakfast food?</p>
+            <input type="radio" name="q5" value="A"> Pizza.<br>
+            <input type="radio" name="q5" value="B"> Pancakes.<br>
+            <input type="radio" name="q5" value="C"> Salad.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>6. What drink is made from coffee beans?</p>
+            <input type="radio" name="q6" value="A"> Tea.<br>
+            <input type="radio" name="q6" value="B"> Juice.<br>
+            <input type="radio" name="q6" value="C"> Coffee.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>7. What do you say when you meet someone for the first time?</p>
+            <input type="radio" name="q7" value="A"> Goodbye.<br>
+            <input type="radio" name="q7" value="B"> Nice to meet you.<br>
+            <input type="radio" name="q7" value="C"> What’s up?<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>8. How do you politely ask for help?</p>
+            <input type="radio" name="q8" value="A"> Help me now!<br>
+            <input type="radio" name="q8" value="B"> Can you please help me?<br>
+            <input type="radio" name="q8" value="C"> I want that.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>9. What word describes feeling very happy?</p>
+            <input type="radio" name="q9" value="A"> Sad<br>
+            <input type="radio" name="q9" value="B"> Excited<br>
+            <input type="radio" name="q9" value="C"> Bored<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>10. How do you feel when you lose something important?</p>
+            <input type="radio" name="q10" value="A"> Happy.<br>
+            <input type="radio" name="q10" value="B"> Upset.<br>
+            <input type="radio" name="q10" value="C"> Excited.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>        
+
+        <div class="question">
+            <p>11. Who takes care of sick people in a hospital?</p>
+            <input type="radio" name="q11" value="A"> Teacher.<br>
+            <input type="radio" name="q11" value="B"> Doctor.<br>
+            <input type="radio" name="q11" value="C"> Firefighter.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>12. Who teaches students in school?</p>
+            <input type="radio" name="q12" value="A"> Pilot.<br>
+            <input type="radio" name="q12" value="B"> Teacher.<br>
+            <input type="radio" name="q12" value="C"> Engineer.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>13. Which is a salty snack?</p>
+            <input type="radio" name="q13" value="A"> Cake.<br>
+            <input type="radio" name="q13" value="B"> Chips.<br>
+            <input type="radio" name="q13" value="C"> Ice cream.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>14. What snack is made from popcorn kernels?</p>
+            <input type="radio" name="q14" value="A"> Candy.<br>
+            <input type="radio" name="q14" value="B"> Popcorn.<br>
+            <input type="radio" name="q14" value="C"> Donut.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>15. Complete the sentence: "I like ."</p>
+            <input type="radio" name="q15" value="A"> Sleeping.<br>
+            <input type="radio" name="q15" value="B"> Eating ice cream.<br>
+            <input type="radio" name="q15" value="C"> Cleaning.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>16. Complete the sentence: "I want to eat ."</p>
+            <input type="radio" name="q16" value="A"> A new book.<br>
+            <input type="radio" name="q16" value="B"> A delicious burger.<br>
+            <input type="radio" name="q16" value="C"> A pencil.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>17. Complete the sentence: "I have a ."</p>
+            <input type="radio" name="q17" value="A"> Cat.<br>
+            <input type="radio" name="q17" value="B"> Think.<br>
+            <input type="radio" name="q17" value="C"> Go.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>18. Do you like ice cream?</p>
+            <input type="radio" name="q18" value="A"> Yes.<br>
+            <input type="radio" name="q18" value="B"> No.<br>
+            <input type="radio" name="q18" value="C"> Maybe.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>19. Is the sky blue?</p>
+            <input type="radio" name="q19" value="A"> Yes.<br>
+            <input type="radio" name="q19" value="B"> No.<br>
+            <input type="radio" name="q19" value="C"> Sometimes.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>20. Do you go to school on Sundays?</p>
+            <input type="radio" name="q20" value="A"> Yes.<br>
+            <input type="radio" name="q20" value="B"> No.<br>
+            <input type="radio" name="q20" value="C"> Sometimes.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+
+        <div class="question">
+            <p>21. How do you introduce yourself?</p>
+            <input type="radio" name="q21" value="A"> My name is Anna. Nice to meet you!<br>
+            <input type="radio" name="q21" value="B"> Where is the bathroom?<br>
+            <input type="radio" name="q21" value="C"> I like pizza.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>22. What do you say when you don’t understand something?</p>
+            <input type="radio" name="q22" value="A"> I don’t know.<br>
+            <input type="radio" name="q22" value="B"> Can you repeat that, please?<br>
+            <input type="radio" name="q22" value="C"> Let’s go!<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>23. How do you ask someone’s name?</p>
+            <input type="radio" name="q23" value="A"> Where do you live?<br>
+            <input type="radio" name="q23" value="B"> What is your name?<br>
+            <input type="radio" name="q23" value="C"> How are you?<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>24. If you want to buy something, what do you say?</p>
+            <input type="radio" name="q24" value="A"> How much is this?<br>
+            <input type="radio" name="q24" value="B"> What is this?<br>
+            <input type="radio" name="q24" value="C"> Where is the toilet?<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>25. How do you respond to “Thank you”?</p>
+            <input type="radio" name="q25" value="A"> See you later!<br>
+            <input type="radio" name="q25" value="B"> You’re welcome!<br>
+            <input type="radio" name="q25" value="C"> No, I don’t.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>26. Where do you live?</p>
+            <input type="radio" name="q26" value="A"> In Thailand.<br>
+            <input type="radio" name="q26" value="B"> At 7:00 PM.<br>
+            <input type="radio" name="q26" value="C"> Yes, I do.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>27. What do you do in your free time?</p>
+            <input type="radio" name="q27" value="A"> I play soccer.<br>
+            <input type="radio" name="q27" value="B"> I am a teacher.<br>
+            <input type="radio" name="q27" value="C"> Yes, I am.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>28. Who is your best friend?</p>
+            <input type="radio" name="q28" value="A"> John.<br>
+            <input type="radio" name="q28" value="B"> At school.<br>
+            <input type="radio" name="q28" value="C"> I like pizza.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>29. When is your birthday?</p>
+            <input type="radio" name="q29" value="A"> In July.<br>
+            <input type="radio" name="q29" value="B"> At the park.<br>
+            <input type="radio" name="q29" value="C"> With my parents.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        <div class="question">
+            <p>30. Why do you study English?</p>
+            <input type="radio" name="q30" value="A"> Because I want to travel.<br>
+            <input type="radio" name="q30" value="B"> It’s 5:00 PM.<br>
+            <input type="radio" name="q30" value="C"> On Monday.<br>
+            <button type="button" class="read-button" onclick="speakQuestionAndAnswers(this)">Read Question and Answers</button>
+        </div>
+        
+        
+        <button type="button" class="submit-button"onclick="calculateScore()">Submit</button>
+        <button type="button" class="back-button"onclick="window.location.href='../index.html'">Go Back</button>
+
+    </form>
+    
+    <h3 id="result" class="hidden"></h3>
+
+    <script>
+        // Function to read the question and its answers
+        function speakQuestionAndAnswers(button) {
+            const questionDiv = button.parentElement;
+            const questionText = questionDiv.querySelector('p').innerText;
+            const answers = Array.from(questionDiv.querySelectorAll('input[type="radio"]'))
+                                  .map(input => input.nextSibling.textContent.trim());
+            
+            const textToSpeak = `${questionText} ${answers.join(' ')}`;
+            
+            const utterance = new SpeechSynthesisUtterance(textToSpeak);
+            speechSynthesis.speak(utterance);
+        }
+        
+        function calculateScore() {
+            let score = 0;
+            let level = "A1";
+            
+            const correctAnswers = {
+                q1: "C", q2: "B", q3: "B", q4: "C", q5: "B",
+                q6: "C", q7: "B", q8: "B", q9: "B", q10: "B",
+                q11: "B", q12: "B", q13: "B", q14: "B", q15: "B",
+                q16: "B", q17: "A", q18: "A", q19: "A", q20: "B", 
+                q21: "B", q22: "B", q23: "B", q24: "A", q25: "B",
+                q26: "A", q27: "A", q28: "A", q29: "A", q30: "A"
+            };
+            
+            for (let i = 1; i <= 30; i++) {
+                let questionKey = `q${i}`;
+                let selected = document.querySelector(`input[name="${questionKey}"]:checked`);
+                
+                if (selected && selected.value === correctAnswers[questionKey]) {
+                    score += 1;
+                }
+            }
+            
+            if (score >= 27) level = "C2";
+            else if (score >= 24) level = "C1";
+            else if (score >= 21) level = "B2";
+            else if (score >= 18) level = "B1";
+            else if (score >= 15) level = "A2";
+            
+            document.getElementById("result").innerText = `Your CEFR Level: ${level} (Score: ${score}/30)`;
+            document.getElementById("result").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
